@@ -2,7 +2,7 @@
 """
 Created on Mon Sep 18 13:30:21 2023
 
-@author: jrbrad
+@author: ngfos
 """
 
 import pandas as pd
@@ -28,7 +28,7 @@ def tract_num(row):
     return row['Geographic Area Name'].strip().split(',')[0].strip().split(' ')[2]
 
 ''' Instantiate DataFrame '''
-filepath = 'files/DECENNIALPL2020.P1_data_with_overlays_2021-11-05T143124_mod.csv'
+filepath = 'DECENNIALPL2020.P1_data_with_overlays_2021-11-05T143124_mod.csv'
 df = pd.read_csv(filepath)
 
 ''' Create new columns '''
